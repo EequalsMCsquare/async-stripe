@@ -69,6 +69,7 @@ impl std::fmt::Display for ErrorType {
 #[derive(Clone, Copy, Debug, Deserialize, Serialize, Eq, PartialEq, Hash)]
 #[serde(rename_all = "snake_case")]
 #[non_exhaustive]
+#[repr(i32)]
 pub enum ErrorCode {
     AccountAlreadyExists,
     AccountCountryInvalidAddress,
